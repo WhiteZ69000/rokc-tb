@@ -152,6 +152,8 @@
             border-color: var(--primary);
         }
 
+        .card h3 { color: var(--white); margin-bottom: 10px; font-size: 1.4rem; }
+        
         .card-tag {
             background: var(--primary);
             color: var(--secondary);
@@ -181,6 +183,7 @@
             border-radius: 50%;
             cursor: pointer;
             transition: all 0.3s;
+            border: 1px solid transparent;
         }
 
         .dot.active {
@@ -213,6 +216,7 @@
             h2 { font-size: 1.8rem; }
             .campaign-grid { grid-template-columns: 1fr; }
             .controls { display: none; }
+            .slide { padding: 20px; }
         }
     </style>
 </head>
@@ -244,15 +248,16 @@
                 <div class="campaign-grid">
                     <div class="card">
                         <h3>Mercado</h3>
-                        <p>Líder na indústria de <span class="highlight">Videojogos AAA</span>.</p>
-                        <p>Especializada em jogos de "Mundo Aberto" com narrativas profundas.</p>
+                        <p>Líder na indústria de <span class="highlight">Videojogos AAA</span> e Publicação.</p>
+                        <p>Especializada em jogos de "Mundo Aberto" com foco em narrativas profundas e liberdade de ação.</p>
                     </div>
                     <div class="card">
                         <h3>Público-Alvo</h3>
+                        <p>Gamers Adultos (+18).</p>
                         <ul>
-                            <li>Gamers Adultos (+18)</li>
                             <li>Fãs de Cinema e Cultura Pop</li>
-                            <li>Consumidores de sátira social</li>
+                            <li>Jogadores de Consola e PC</li>
+                            <li>Consumidores que procuram narrativas complexas e sátira social.</li>
                         </ul>
                     </div>
                 </div>
@@ -262,10 +267,18 @@
         <section class="slide" id="slide2">
             <div class="content">
                 <h2>ADN da Marca</h2>
-                <div style="display: grid; gap: 20px;">
-                    <div><h3 class="highlight">Missão</h3><p>Criar as experiências mais imersivas do mundo.</p></div>
-                    <div><h3 class="highlight">Visão</h3><p>Ser a força cultural dominante no entretenimento.</p></div>
-                    <div><h3 class="highlight">Valores</h3><p>Perfeccionismo, Liberdade Criativa e Inovação.</p></div>
+                <div style="display: grid; grid-template-columns: 1fr; gap: 20px;">
+                    <div><h3 class="highlight">Missão</h3><p>Criar as experiências de entretenimento mais imersivas do mundo.</p></div>
+                    <div><h3 class="highlight">Visão</h3><p>Ser a força cultural dominante no entretenimento através da interatividade.</p></div>
+                    <div>
+                        <h3 class="highlight">Valores</h3>
+                        <ul style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                            <li>Perfeccionismo</li>
+                            <li>Liberdade Criativa</li>
+                            <li>Inovação Tecnológica</li>
+                            <li>Narrativa Cinematográfica</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -275,12 +288,16 @@
                 <h2>O Portfólio de Ouro</h2>
                 <div class="campaign-grid">
                     <div class="card" style="border-left: 5px solid #4CAF50;">
-                        <h3>Grand Theft Auto</h3>
-                        <p>O produto de entretenimento mais rentável da história.</p>
+                        <h3>Grand Theft Auto (GTA)</h3>
+                        <p>O GTA V é o produto de entretenimento mais rentável de toda a história.</p>
                     </div>
                     <div class="card" style="border-left: 5px solid #f44336;">
                         <h3>Red Dead Redemption</h3>
-                        <p>Obra-prima técnica e narrativa do género Western.</p>
+                        <p>Aclamado pela crítica como uma obra-prima técnica e narrativa.</p>
+                    </div>
+                    <div class="card" style="grid-column: span 2; border-left: 5px solid #2196F3;">
+                        <h3>Outros Clássicos</h3>
+                        <p>Max Payne, Bully, L.A. Noire e Midnight Club.</p>
                     </div>
                 </div>
             </div>
@@ -292,13 +309,13 @@
                 <div class="campaign-grid">
                     <div class="card">
                         <span class="card-tag">Método Único</span>
-                        <h3>Estratégia do Silêncio</h3>
-                        <p>Criação de "hype" através da escassez e ausência em eventos.</p>
+                        <h3>A Estratégia do Silêncio</h3>
+                        <p>Criação de "hype" através da escassez. Uma única publicação para a internet.</p>
                     </div>
                     <div class="card">
                         <span class="card-tag">Polémica</span>
-                        <h3>Controvérsia Útil</h3>
-                        <p>Uso de críticas sociais e polémicas como publicidade gratuita.</p>
+                        <h3>Controvérsia como Publicidade</h3>
+                        <p>A marca abraça a controvérsia. "Não existe má publicidade".</p>
                     </div>
                 </div>
             </div>
@@ -311,27 +328,32 @@
                     <div class="card">
                         <span class="card-tag">GTA V</span>
                         <h3>"Welcome to Los Santos"</h3>
-                        <p>Outdoors massivos e foco na vida das personagens.</p>
+                        <p>Focada na apresentação do mundo do jogo como um destino real.</p>
                     </div>
                     <div class="card">
                         <span class="card-tag">RDR 2</span>
                         <h3>"Outlaws for Life"</h3>
-                        <p>Estética de cartazes de "Procurado" e tom épico.</p>
+                        <p>Campanha visual baseada em cartazes de "Procurado".</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="slide" id="slide6">
-            <div class="content" style="text-align: center;">
-                <h1 style="font-size: 8rem; color: var(--primary); margin-bottom: 0;">R<span style="color:white">★</span></h1>
-                <h2>OBRIGADO</h2>
-                <p>Rockstar Games</p>
+            <div class="content">
+                <div style="text-align: center;">
+                    <h1 style="font-size: 8rem; color: var(--primary); margin-bottom: 0;">R<span style="color:white">★</span></h1>
+                    <h2>OBRIGADO</h2>
+                    <p>Rockstar Games</p>
+                    <div style="margin-top: 30px; font-size: 0.8rem; color: #555;">
+                        Informação baseada em comunicados oficiais e no histórico da Take-Two Interactive.
+                    </div>
+                </div>
             </div>
         </section>
     </div>
 
-    <div class="controls">
+    <div class="controls" id="controls">
         <div class="dot active" onclick="goToSlide(0)"></div>
         <div class="dot" onclick="goToSlide(1)"></div>
         <div class="dot" onclick="goToSlide(2)"></div>
@@ -374,8 +396,8 @@
         });
 
         window.addEventListener('keydown', (e) => {
-            if (['ArrowDown', 'ArrowRight'].includes(e.key)) nextSlide();
-            if (['ArrowUp', 'ArrowLeft'].includes(e.key)) prevSlide();
+            if (e.key === 'ArrowDown' || e.key === 'ArrowRight') nextSlide();
+            if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') prevSlide();
         });
 
         updateSlide();
